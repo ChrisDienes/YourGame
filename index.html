@@ -55,11 +55,7 @@
 			-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
 			box-shadow: 0 0 1px rgba(0,0,0, .75);
 		}
-		input[type="text"], select:focus,
-		textarea {
-			font-size: 16px;
-		}
-		#codeText{
+		.codeTextClass{
 			font-family:'Open Sans',sans-serif;
 		    font-size:32px;
 			margin:10px;
@@ -222,7 +218,7 @@
 				        <li class="form-style">
 							<label class="form-style" style="font-size:48px;color:white;">Enter Codeword</label>
 							<input class="inputButton" id = "decode" type="submit" value="Decode" onclick="decoder()" />
-							<input type="text" id="codeText" name="code" maxlength="12" autocomplete="off" style="width:50%;text-align:center;" placeholder="Enter Code" />
+							<input type="text" id="codeText" class = "codeTextClass" name="code" maxlength="12" autocomplete="off" style="width:50%;text-align:center;" placeholder="Enter Code" />
 						</li>
 			</div>
 		</div>
