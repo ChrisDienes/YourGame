@@ -8,6 +8,30 @@
 	<style type="text/css">
 		body {background-color: #669999;font-family:'Open Sans',sans-serif;font-size:48px;}
 		#outer {width:90%; margin: 0 auto;}
+		.inputButton{
+			font-family:'Open Sans',sans-serif;
+		    font-size:32px;
+			margin:10px;
+			background: #1e90ff;
+			border:1px solid #1e90ff;
+			-webkit-appearance: none;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			box-shadow: 0 0 4px rgba(0,0,0, .75);
+			outline: none;
+			padding: 8px 15px 8px 15px;
+			border: none;
+			color: #fff;
+		}
+		.inputButton:hover{
+			background: #1B81E5;
+			-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			box-shadow: 0 0 1px rgba(0,0,0, .75);
+		}
 		.button{
 		    font-family:'Open Sans',sans-serif;
 		    font-size:32px;
@@ -193,7 +217,7 @@
 				<ul class="form-style">
 				        <li class="form-style">
 							<label class="form-style" style="font-size:48px;color:white;">Enter Codeword</label>
-							<input class="button" id = "decode" type="submit" value="Decode" onclick="decoder()" />
+							<input class="inputButton" id = "decode" type="submit" value="Decode" onclick="decoder()" />
 							<input type="text" id="codeText" name="code" maxlength="12" autocomplete="off" style="width:50%;text-align:center;" placeholder="Enter Code" />
 						</li>
 			</div>
